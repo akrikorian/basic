@@ -10,10 +10,10 @@ requirejs.config({
 	}
 });
 
-define(['jquery', 'sleepy'], function ($, SM) {
+define(['jquery', 'sleepy'], function($, SM) {
 	'use strict';
 
-	$(function () {
+	$(function() {
 		$('body').addClass((SM.isTouchDevice()) ? 'touchable': '');
 		
 		require(['fabric'], function (Fabric) {
@@ -85,7 +85,7 @@ define(['jquery', 'sleepy'], function ($, SM) {
 							var img = new Image();
 							var brightness = new Fabric.Image.filters.Brightness();
 							var grayscale = new Fabric.Image.filters.Grayscale();
-	
+
 							function renderOptions () {
 								var imageOption = document.createElement('input'),
 									contrastOption = document.createElement('input'),
@@ -165,22 +165,19 @@ define(['jquery', 'sleepy'], function ($, SM) {
 									backgroundImg.applyFilters(canvas.renderAll.bind(canvas));																											
 								});
 							}
-							function scaleByWidth(image, canvas) {
-								var widthDifference = Math.abs(image.getWidth() - canvas.getWidth()),
-									heightDifference = Math.abs(image.getHeight() - canvas.getHeight());
-
-								if (widthDifference < heightDifference) {
+							function scaleByWidth(image, canvas) { 
+								if (image.getWidth() > image.getHeight()) {
 									return true;
-								} 
+								}
 								return false;
 							}
 							function renderDownloadButton() {
 								var downloadButton = document.createElement('a');
 								
-
 								downloadButton.innerHTML = 'Download';
 								$('.wrapper').append(downloadButton);
 
+								// download canvas 
 								$(downloadButton).on('click', function (e) {
 									var anchor = document.createElement('a');
 									
@@ -195,7 +192,7 @@ define(['jquery', 'sleepy'], function ($, SM) {
 							backgroundImg.setOptions({
 								centeredScaling: true,
 								hasBorders: false,
-                            	hasControls: false
+		                    	hasControls: false
 							});
 							// add initial filter
 							backgroundImg.filters.push(brightness);
@@ -216,21 +213,23 @@ define(['jquery', 'sleepy'], function ($, SM) {
 							canvas.add(backgroundImg);
 							canvas.add(group);
 							backgroundImg.on("moving", function () {
-								console.log('image moving');
 								var imageBoundaries;
-								
+								// prevents whitespace between the image's boundaries and the viewable area's boundaries
 								this.setCoords();
 								imageBoundaries = this.getBoundingRect();
-								console.log('position before being set:', this.getLeft());
-								console.log(imageBoundaries)
 								if (imageBoundaries.left > 0) {
 									this.setLeft(0);
 								}
 								if (imageBoundaries.left + imageBoundaries.width < canvas.width) {
-									// this.setLeft(Math.min(0, Math.max(canvas.width - imageBoundaries.width, imageBoundaries.left)) + imageBoundaries.width / 2);
-									console.log('right boundary');									
+									// this.setLeft(Math.min(0, Math.max(canvas.width - imageBoundaries.width, imageBoundaries.left)) + imageBoundaries.width / 2);								
 									this.setLeft((imageBoundaries.width - canvas.width) * -1);
-									console.log('position after being set:', this.getLeft());
+								}
+								if (imageBoundaries.top > 0) {
+									this.setTop(0);
+								}
+								if (imageBoundaries.top + imageBoundaries.height < canvas.height) {
+									// this.setLeft(Math.min(0, Math.max(canvas.width - imageBoundaries.width, imageBoundaries.left)) + imageBoundaries.width / 2);								
+									this.setTop((imageBoundaries.height - canvas.height) * -1);
 								}
 
 							});
@@ -242,8 +241,7 @@ define(['jquery', 'sleepy'], function ($, SM) {
 						};
 					}();
 
-					reader.readAsDataURL(this.files[0]);		
-								
+					reader.readAsDataURL(this.files[0]);								
 				}
 			});
 		});

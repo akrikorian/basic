@@ -16,19 +16,6 @@ body {
 	background-size: cover;    
 	background-position: top center;
     background-attachment: fixed;
-
-    &.slide-1 {
-    	background-image: url(../images/bg-black4.jpg);
-    }
-    &.slide-2 {
-    	background-image: none;
-    }
-    &.slide-3 {
-    	background-image: url(../images/bg-black4.jpg);
-    }
-    &.slide-4 {
-    	background-image: none;
-    }
 }
 #frame {
 	display: none;
