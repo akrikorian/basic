@@ -1,0 +1,800 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lock",
+				"lockMovementX"
+			],
+			[
+				"a",
+				"append"
+			],
+			[
+				"browser",
+				"browserSync"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"temp",
+				"tempSelector"
+			],
+			[
+				"bas",
+				"base64_decode"
+			],
+			[
+				"privac",
+				"privacyLink"
+			],
+			[
+				"ar",
+				"argument"
+			],
+			[
+				"copy",
+				"copyHover"
+			],
+			[
+				"breadcrum",
+				"breadcrumbData"
+			],
+			[
+				"PREG",
+				"preg_match"
+			],
+			[
+				"path",
+				"newPath"
+			],
+			[
+				"g",
+				"get_version"
+			],
+			[
+				"generate",
+				"generate_configuration"
+			],
+			[
+				"isAu",
+				"isAuthenticated"
+			],
+			[
+				"II",
+				"Initiating"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"select",
+				"selectorOverload"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"left",
+				"left"
+			],
+			[
+				"getsu",
+				"getsurveyquestions"
+			],
+			[
+				"license",
+				"license_number"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"thyr",
+				"thyroid-cancer-treatment"
+			],
+			[
+				"differ",
+				"differentiated-thyroid-cancer"
+			],
+			[
+				"hepatocell",
+				"hepatocellular-carcinoma"
+			],
+			[
+				"detach",
+				"detachedMain"
+			],
+			[
+				"hepa",
+				"Hepatocellular"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"glossar",
+				"glossaryTerms"
+			],
+			[
+				"C",
+				"hw_Children"
+			],
+			[
+				"renal",
+				"renal-cell"
+			],
+			[
+				"rena",
+				"renal-cell-carcinoma"
+			],
+			[
+				"hand-foot",
+				"hand-foot-skin-reaction"
+			],
+			[
+				"accO",
+				"accOne"
+			],
+			[
+				"get",
+				"getPermPhysicians"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php\n	require_once($_SERVER['DOCUMENT_ROOT'] . '/app/core/sleepy.php');\n\n	$page = new \\Sleepy\\Template('page');\n\n	$page->bindStart('content');\n	?>\n		<h2>test</h2>\n		<div class=\"canvas-outer\">\n			<canvas id=\"foo\" width=\"384\" height=\"412\"></canvas>\n			<img id=\"frame\" src=\"/images/logo-frame-2x.png\" />\n		</div>\n		<input type=\"file\" />\n	<?php\n	$page->bindStop('content');\n	$page->show();",
+			"file": "src/myPage/index.php",
+			"file_size": 409,
+			"file_write_time": 131027311413257271,
+			"settings":
+			{
+				"buffer_size": 386,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n\n// Modules and Variables\n$desktop-breakpoint: 767px;\n\n@import 'modules/all';\n\n// Partials\n\ncanvas {\n	border: 1px solid black;\n}\nbody {\n	background-image: url(../images/bg-black4.jpg);\n	background-repeat: no-repeat;\n	background-size: cover;    \n	background-position: top center;\n    background-attachment: fixed;\n\n    &.slide-1 {\n    	background-image: url(../images/bg-black4.jpg);\n    }\n    &.slide-2 {\n    	background-image: none;\n    }\n    &.slide-3 {\n    	background-image: url(../images/bg-black4.jpg);\n    }\n    &.slide-4 {\n    	background-image: none;\n    }\n}\n#frame {\n	display: none;\n}\n\n.canvas-outer {\n	width: 433px;\n	height: 433px;\n}\n\ninput[type=range] {\n    display: none;\n\n    &.active {\n        display: block;\n    }\n}",
+			"file": "src/scss/main.scss",
+			"file_size": 780,
+			"file_write_time": 131038307152588332,
+			"settings":
+			{
+				"buffer_size": 733,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/main.js",
+			"settings":
+			{
+				"buffer_size": 7006,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nSyntax Highlighting for Sass\n----------------------------\n\n  \n  Thank you for installing Syntax Highlighting for Sass.\n  \n  Here are some core features that you might want to know, for more details please check https://github.com/P233/Syntax-highlighting-for-Sass/\n  \n  ## Built-in Completion Packages\n  \n      There are 8 built-in completion packages. Pick up the package name which you are not intend to use, then add it/them into the `ignored_packages` list of your settings file. (If you know a better way to do this please please let me know.)\n  \n      * SHS-At-Rule\n      * SHS-Bourbon\n      * SHS-Bourbon-Neat\n      * SHS-Compass-Mixins\n      * SHS-Compass-Variables\n      * SHS-CSS-Properties\n      * SHS-CSS-Property-Values\n      * SHS-Sass-Functions\n  \n  ## Smart Completion Rule\n  \n      1. Typing @-rule, ID, class, placeholder-selector, mixin name, function name, comment, and quoted content will never popup any completions.\n      2. ** When typing property values, property name and other completions will no longer popup.\n      3. Built-in mixin name completions will only popup directly behind `@include` or `+`.\n      4. Built-in variable compltions will only popup when you typing variables.\n  \n      ** The latest version of [Emmet CSS Snippets](https://sublime.wbond.net/packages/Emmet%20Css%20Snippets) now fully supports this feature. I recommend to use it instead of the built-in properties completion package.\n  \n  ## Comment Tag\n  \n      Use `{{` and `}}` to wrap a keyword inside comment, then this keyword (comment tag) will be indexed by the Goto Symbol and Goto Definition features.\n  \n  \n  \n  -------------\n  Enjoy coding!\n",
+			"settings":
+			{
+				"buffer_size": 1705,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "Packages/User/scss-compile.sublime-build",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 104.0,
+		"last_filter": "Package Control: remove",
+		"selected_items":
+		[
+			[
+				"Package Control: remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Hacker",
+				"HackerTyper: Enable"
+			],
+			[
+				"",
+				"SublimeLinter: Choose Lint Mode"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 194.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Repo/basic-fork/src",
+		"/C/Repo/basic-fork/src/app",
+		"/C/Repo/basic-fork/src/app/modules",
+		"/C/Repo/basic-fork/src/app/templates",
+		"/C/Repo/basic-fork/src/js",
+		"/C/Repo/basic-fork/src/myPage",
+		"/C/Repo/basic-fork/src/scss"
+	],
+	"file_history":
+	[
+		"/C/Users/Alex Krikorian/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/C/Repo/basic-fork/src/scss/main.scss",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Repo/signal-genetics-template/README.md",
+		"/C/Repo/basic-fork/src/app/templates/header.tpl",
+		"/C/Repo/basic-fork/src/js/main.js",
+		"/C/Users/Alex Krikorian/Desktop/signal-genetics/notes.txt",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/partials/_structure.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/partials/_page-specific.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/partials/_navigation.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/modules/_fonts.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/partials/_buttons.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/partials/_typography.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/images/myprs-logo.png",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/modules/_color.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/templates/page-title.html.twig",
+		"/C/Repo/basic-fork/src/myPage/index.php",
+		"/C/Repo/basic-fork/src/js/fabric.js",
+		"/C/Repo/basic-fork/src/js/fabric.min.js",
+		"/C/Users/Alex Krikorian/Desktop/test.html",
+		"/C/Repo/www.signalgenetics.com/autoload.php",
+		"/C/Repo/www.signalgenetics.com/index.php",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/partials/_tabs.scss",
+		"/C/Repo/www.signalgenetics.com/database.sql",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/partials/_tech-image-list.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/js/main.js",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/main.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/partials/_forms.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/css/main.css",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/scss/modules/_utils.scss",
+		"/C/Repo/www.signalgenetics.com/themes/custom/signalgenetics/gulpfile.js",
+		"/C/Repo/www.signalgenetics.com/sites/default/settings.stage.php",
+		"/C/Users/Alex Krikorian/.ssh/id_rsa.pub",
+		"/C/Users/Alex Krikorian/AppData/Local/Temp/fz3temp-1/author.php",
+		"/C/Users/Alex Krikorian/Desktop/Accuride blog notes.md",
+		"/C/Repo/basic-fork/src/scss/modules/_utils.scss",
+		"/C/Users/Alex Krikorian/AppData/Local/Temp/fz3temp-1/hello.php",
+		"/C/Users/Alex Krikorian/Desktop/wp_widget/wp-page-widget/readme.txt",
+		"/C/Users/Alex Krikorian/AppData/Local/Temp/fz3temp-1/README_License.txt",
+		"/C/Program Files (x86)/IIS Express/PHP/v5.4/php.ini",
+		"/C/Repo/accuride-blog/src/index.php",
+		"/C/Repo/Dysport-hcp/dysport-hcp/dysport-hcp/scss/modules/_reset.scss",
+		"/C/Repo/Dysport-hcp/dysport-hcp/dysport-hcp/Scripts/main.js",
+		"/C/Repo/Dysport-hcp/dysport-hcp/dysport-hcp/scss/modules/_mixins.scss",
+		"/C/Repo/accuride-blog/README.md",
+		"/C/Repo/basic-fork/src/process/index.php",
+		"/C/Repo/basic-fork/src/app/templates/default.tpl",
+		"/C/Repo/accuride.com/src/Accuride.Website/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/schema/default.js",
+		"/C/Users/Alex Krikorian/Documents/scss/config.rb",
+		"/C/Repo/Dysport-hcp/dysport-hcp/dysport-hcp/scss/main.css.map",
+		"/C/Repo/basic-mvc/README.md",
+		"/C/Repo/Dysport-hcp/dysport-hcp/dysport-hcp/scss/main.scss",
+		"/C/Repo/basic-fork/src/gulpfile.js",
+		"/C/Repo/basic-fork/src/css/main.css.map",
+		"/C/Repo/basic-fork/src/css/main.css",
+		"/C/Repo/basic-fork/src/package.json",
+		"/C/Repo/basic-fork/src/css/main.min.css",
+		"/C/Repo/basic-fork/src/index.php",
+		"/C/Repo/basic/src/app/templates/header.tpl",
+		"/C/Repo/basic/src/scss/main.scss",
+		"/C/Repo/basic/src/package.json",
+		"/C/Repo/basic/src/scss/modules/_normalize.scss",
+		"/C/Repo/basic/src/css/normalize.css",
+		"/C/Repo/basic/src/scss/modules/_all.scss",
+		"/C/Repo/basic/src/gulpfile.js",
+		"/C/Repo/basic/src/css/main.min.css",
+		"/C/Repo/basic/src/scss/modules/_fixes.scss",
+		"/C/Repo/www.proleukin.com/src/scss/config.rb",
+		"/C/Repo/www.proleukin.com/src/scss/main.scss",
+		"/C/Repo/basic/src/scss/modules/_fonts.scss",
+		"/C/Repo/basic/src/css/style.css",
+		"/C/Repo/basic/src/scss/modules/_colors.scss",
+		"/C/Users/Alex Krikorian/Documents/Sandbox/demo-gulp/gulpfile.js",
+		"/C/Users/Alex Krikorian/Documents/Sandbox/demo-gulp/app/scss/style.scss",
+		"/C/Users/Alex Krikorian/Documents/Sandbox/demo-gulp/app/js/lib/a-library.js",
+		"/C/Users/Alex Krikorian/Documents/Sandbox/demo-gulp/app/js/lib/another-library.js",
+		"/C/Users/Alex Krikorian/Documents/Sandbox/demo-gulp/app/js/main.js",
+		"/C/Users/Alex Krikorian/Documents/Sandbox/demo-gulp/app/index.html",
+		"/C/Users/Alex Krikorian/Documents/Sandbox/demo-gulp/package.json",
+		"/C/Repo/menwhospeakup.com/gulpfile.js",
+		"/C/Users/Alex Krikorian/Documents/Sandbox/demo-gulp/dist/index.html",
+		"/C/Repo/www.proleukin.com/src/app/modules/navigation.php",
+		"/C/Repo/www.proleukin.com/src/scss/partials/_isi-clone.scss",
+		"/C/Users/Alex Krikorian/Documents/scss utils/_utils.scss",
+		"/C/Users/Alex Krikorian/Documents/scss utils/_fixes.scss",
+		"/C/Repo/www.proleukin.com/src/scss/watch.bat",
+		"/C/Repo/www.proleukin.com/src/js/weather.js",
+		"/C/Repo/www.proleukin.com/src/app/modules/class.sitemap.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mmrc-success-stories.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mmrc-faqs.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mmrc-sitemap.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-register-for-updates-index.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-metastatic-melanoma-treatments.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mmrc-connect-with-survivor.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mmrc-meet-a-survivor.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-connect-with-a-survivor.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-contact-us-index.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-success-stories.php",
+		"/C/Repo/www.proleukin.com/src/app/templates/components/sprinkle.tpl",
+		"/C/Repo/www.proleukin.com/src/app/templates/components/footer.tpl",
+		"/C/Repo/www.proleukin.com/src/app/templates/components/survived.tpl",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-meet-a-survivor.php",
+		"/C/Repo/www.proleukin.com/src/js/isi.js",
+		"/C/Repo/www.proleukin.com/src/app/templates/components/header.tpl",
+		"/C/Repo/www.proleukin.com/src/scss/modules/_colors.scss",
+		"/C/Repo/www.proleukin.com/src/scss/modules/_fonts.scss",
+		"/C/Repo/www.proleukin.com/src/scss/modules/_utils.scss",
+		"/C/Repo/www.proleukin.com/src/scss/partials/_content.scss",
+		"/C/Repo/www.proleukin.com/src/js/popup.js",
+		"/C/Repo/www.proleukin.com/src/scss/partials/_navigation.scss",
+		"/C/Repo/www.proleukin.com/src/scss/partials/_page-specific-alex.scss",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mmrc-treatment.php",
+		"/C/Repo/www.proleukin.com/src/images/hamburger.png",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-talking-to-your-doctor.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-side-effects.php",
+		"/C/Repo/www.proleukin.com/src/js/main.js",
+		"/C/Repo/www.proleukin.com/src/scss/partials/_page-specific-chris.scss",
+		"/C/Repo/www.proleukin.com/src/js/glossary.js",
+		"/C/Repo/www.proleukin.com/src/js/glossaryItem.js",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-treatment.php",
+		"/C/Repo/www.proleukin.com/src/js/landing-popup.js",
+		"/C/Users/Alex Krikorian/Desktop/proleukin questions 12032015",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mmrc-resources.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-resources.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-treatment-effectiveness.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mm-your-support-team.php",
+		"/C/Repo/www.proleukin.com/src/app/views/home-mmrc-your-support-team.php",
+		"/C/Repo/www.proleukin.com/src/scss/partials/_section-specific.scss"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"<project>",
+			"C:\\Repositories\\Clients\\Bayer\\Xofigo\\Veeva-Performance\\src\\_template",
+			"<project>",
+			"C:\\Repositories\\Clients\\Actelion\\Opsumit\\CVA\\src\\_controlfiles",
+			"<project>",
+			"C:\\Repositories\\Clients\\Actelion\\Opsumit\\Patient Builder\\src\\ops-cs-tnpatient-q1\\global\\js",
+			"<project>",
+			"C:\\Repositories\\Clients\\Amgen\\Neulasta\\CVA iDetail\\src\\_template",
+			"<project>",
+			"C:\\Repositories\\Clients\\Actelion\\Opsumit\\Patient Builder\\src\\_template",
+			"<project>",
+			"*,*.js"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"input",
+			"renderSliderControl",
+			"footer",
+			"help",
+			"physician",
+			"left: -",
+			"fact",
+			"help",
+			".tabs",
+			"tabs",
+			"// //",
+			"ctx.moveTo",
+			"temp",
+			");\n",
+			"id",
+			".pipe(gulp.dest(cssFolder))",
+			"baseir",
+			"applyFilter(",
+			"addAction(",
+			"ad",
+			"addAction",
+			".pdf",
+			" ",
+			"html",
+			"overflow",
+			"<li>",
+			"	",
+			"treatment-image",
+			"treatment",
+			"{\n",
+			"transform: ",
+			"transform: trans",
+			"transform",
+			"tr",
+			"transform",
+			"#nurse-tooltip",
+			"#nurse-hat",
+			"you'll re",
+			"tooltip",
+			"definition",
+			"definition-pop",
+			"gloss",
+			"fpo",
+			"doctor",
+			"#support",
+			"{$search}",
+			"	$sql  = \"",
+			"<br/>",
+			"ideal-support-team",
+			"map",
+			"<br/>",
+			"  ",
+			"<br/>",
+			"<br/",
+			"if ($('.tooltip.show').length > 1) {\n			$('.tooltip').not('#' + tooltip).removeClass('show');\n		}",
+			"alt",
+			"  ",
+			"<br/>",
+			".tooltip p ",
+			"backgrou",
+			"MM.3.3.4",
+			"MM.3.3.3",
+			"MM.3.3.4",
+			"background-image(",
+			"-ms-",
+			".tooltip-trigger",
+			".treatment-image",
+			".directions",
+			".info",
+			"#facility .info_box",
+			"padding-left: 48px;",
+			"facility > div",
+			"width: 38",
+			".info_box",
+			"img",
+			"    margin: 12px 0; ",
+			"media",
+			"max-width",
+			"#tcf .info",
+			"facilityImage",
+			"~",
+			"black",
+			"\">",
+			"sprink",
+			"mmrc-your-support-team-index",
+			"MKC 1.3",
+			"MKC",
+			"MM.0.1",
+			"H.0.1",
+			"border-bottom",
+			"backto",
+			"MM.3.3.2",
+			"MM.3.3.2\"",
+			"two",
+			"fpo",
+			"footnote",
+			";\n",
+			"survivor-th",
+			"facilityIm",
+			".viewdetails",
+			"getque",
+			"viewbubble",
+			"results",
+			".viewdet",
+			"runsearch",
+			"backto",
+			"$('.BackToSearch').live('click',function() {\n	// 	$(\"#tcf\").removeClass(\"showmap\");\n	// 	$('#search_wrap').show();\n	// 	$('#facility_wrap').hide();\n	// 	// reset some parts of the page - but not all the stuff in clearpage()\n	// 	$('.FacultyMembers > div').not('.template').remove();\n	// 	try { infowindow.close(); } catch(e) { }\n	// });",
+			".top",
+			".wrapper",
+			"return",
+			"params",
+			"route->params",
+			".viewdetails",
+			".search",
+			"fixed",
+			"treatmen",
+			"medicine",
+			"tmn",
+			"		",
+			"			",
+			"		",
+			"			",
+			"		",
+			"			",
+			"		",
+			"			",
+			"		",
+			"			"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"circle",
+			"$page->bind('sidebar', '');",
+			"click",
+			"touchstart",
+			"a00J000000AdkM3",
+			"Env@92653!",
+			"cloader@veeva.partner23.envivent",
+			"Product_vod__c=a00J000000AetZX",
+			"PASSWORD=Env@92653!",
+			"USER=Env@92653!",
+			"USER=cloader@veeva.partner23.envivent",
+			"#20bdbe",
+			"a00J000000AdkM3",
+			"Env@92653!",
+			"cloader@veeva.partner23.envivent",
+			"images",
+			"",
+			"/images/",
+			"http://eblasts.envivent.com/giant/30days/images/",
+			"images/",
+			"http://sandbox.envivent.com/30days/",
+			"js",
+			"images/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/myPage/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 386,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								332,
+								332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/scss/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6670,
+								6670
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1872.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1705,
+								1705
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"default_dir": "C:\\Repo\\basic-fork\\src",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "basic-fork.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Repositories\\Clients\\Actelion\\Opsumit\\Patient Builder\\src\\Neulasta-CVA.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

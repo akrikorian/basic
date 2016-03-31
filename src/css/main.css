@@ -527,5 +527,34 @@ nav > ul li:hover > ul {
 
   .mobile-only {
     display: none; } }
+canvas {
+  border: 1px solid black; }
+
+body {
+  background-image: url(../images/bg-black4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed; }
+  body.slide-1 {
+    background-image: url(../images/bg-black4.jpg); }
+  body.slide-2 {
+    background-image: none; }
+  body.slide-3 {
+    background-image: url(../images/bg-black4.jpg); }
+  body.slide-4 {
+    background-image: none; }
+
+#frame {
+  display: none; }
+
+.canvas-outer {
+  width: 433px;
+  height: 433px; }
+
+input[type=range] {
+  display: none; }
+  input[type=range].active {
+    display: block; }
 
 /*# sourceMappingURL=main.css.map */
