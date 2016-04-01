@@ -18,10 +18,7 @@ define(['jquery', 'sleepy'], function($, SM) {
 		
 		require(['fabric'], function (Fabric) {
 			var canvas = new Fabric.Canvas('foo');
-			var imageInstance = new Fabric.Image(document.getElementById('frame'), {
-				selectable: false,
-				evented: false	
-			});
+			var frameImage;
 			var text = new Fabric.IText( '', {
 			 	fontFamily: 'arial black',
 			 	fontSize: 100,
@@ -35,7 +32,6 @@ define(['jquery', 'sleepy'], function($, SM) {
 			 	fill: 'white',
 			 	hasBorders: false			 	
 			});
-
 			text.on('editing:entered', function () {
 				$(document).on('keyup', function (e) {
 					
@@ -48,23 +44,22 @@ define(['jquery', 'sleepy'], function($, SM) {
 					text.centerH();
 				});
 			});
-			text.on('text:changed', function () {
-				console.log('text changed');
-			});
-			// text.on('editLLL', function (e) {
-				
-			// 	console.log('event listener off');
-			// 	$(document).off('keydown');
-			// });
 
-			imageInstance.scaleToHeight(canvas.height);			
-			canvas.add(imageInstance);
+			Fabric.Image.fromURL('../images/logo-frame-2x.png', function (img) {
+				img.scaleToHeight(canvas.height);			
+				canvas.add(img);
+				frameImage = img;
+				frameImage.setOptions({
+					selectable: false,
+					evented: false
+				});
+			});
 			canvas.add(text);
 			canvas.setActiveObject(text);
 			text.enterEditing();
 			canvas.renderAll.bind(canvas);
 
-
+			console.dir(canvas);
 			// file upload
 
 			$(':file').on('change', function (e) {
@@ -73,7 +68,7 @@ define(['jquery', 'sleepy'], function($, SM) {
 				// handle files
 				if (this.files.length) {
 					var reader = new FileReader();
-					var group = new Fabric.Group([imageInstance, text]);
+					var group = new Fabric.Group([frameImage, text]);
 				
 					group.scaleToHeight(canvas.height / 2);
 				
@@ -165,7 +160,7 @@ define(['jquery', 'sleepy'], function($, SM) {
 									backgroundImg.applyFilters(canvas.renderAll.bind(canvas));																											
 								});
 							}
-							function scaleByWidth(image, canvas) { 
+							function scaleByWidth(image) { 
 								if (image.getWidth() > image.getHeight()) {
 									return true;
 								}
@@ -201,14 +196,13 @@ define(['jquery', 'sleepy'], function($, SM) {
 							canvas.clear();
 
 							// scale by width or height
-							if (scaleByWidth(backgroundImg, canvas)) {
-								backgroundImg.scaleToWidth(canvas.getWidth());
-								backgroundImg.minScaleLimit = backgroundImg.scaleX;
-							} else {
-								backgroundImg.scaleToHeight(canvas.getHeight());
+							if (scaleByWidth(backgroundImg)) {								
+								backgroundImg.scaleToHeight(canvas.height);
 								backgroundImg.minScaleLimit = backgroundImg.scaleY;
+							} else {
+								backgroundImg.scaleToWidth(canvas.width);
+								backgroundImg.minScaleLimit = backgroundImg.scaleX;
 							}
-							
 							// add images to canvas
 							canvas.add(backgroundImg);
 							canvas.add(group);
